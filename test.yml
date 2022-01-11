@@ -4,10 +4,3 @@
     - name: Hello Message
       debug:
         msg: "{{return_message}}"
-
-- name: Ping vCenter
-  hosts: 192.168.15.50
-  tasks:
-  - action: ping
-    register: hello
-  - debug: msg="{hello.stdout}"
