@@ -1,8 +1,9 @@
 - name: Create Datacenter
+  hosts: all
   community.vmware.vmware_datacenter:
     hostname: '{{ vcenter_hostname }}'
     username: '{{ vcenter_username }}'
     password: '{{ vcenter_password }}'
     datacenter_name: '{{ datacenter_name }}'
     state: present
-  delegate_to: localhost
+  delegate_to: prod-docker1-lax1.acuitycon.com
