@@ -1,0 +1,5 @@
+- name: Make sure requirements are met to run vmware modules
+  become: true
+  pip:
+    name: PyVmomi
+    state: present
