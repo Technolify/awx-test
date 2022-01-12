@@ -1,4 +1,5 @@
 - name: Create Datacenter
+  hosts: all
   tasks:
   - name: Create DataCenter
     community.vmware.vmware_datacenter:
