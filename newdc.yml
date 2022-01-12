@@ -1,5 +1,5 @@
 - name: Create Datacenter
-  hosts: all
+  hosts: 192.168.15.9
   tasks:
   - name: Create DataCenter
     community.vmware.vmware_datacenter:
@@ -8,4 +8,4 @@
       password: '{{ vcenter_password }}'
       datacenter_name: '{{ datacenter_name }}'
       state: present
-    delegate_to: all
+    delegate_to: 192.168.15.9
